@@ -238,6 +238,8 @@ document.addEventListener('DOMContentLoaded', function () {
   .quote-block { text-align: center; padding: 12px 0 28px; }
   .quote-mark { font-family: 'Lora', serif; font-size: 48px; color: var(--gold); line-height: 0.4; display: block; margin-bottom: 12px; }
   .quote-block p { font-family: 'Lora', serif; font-style: italic; font-size: 19px; line-height: 1.5; max-width: 32ch; margin: 0 auto; color: var(--ink-soft); }
+  /* Em seção de fundo escuro, a citação precisa de cor clara pra continuar legível */
+  .bg-dark .quote-block p { color: var(--gold-soft); }
 
   /* Qualification lists, no side-stripe */
   .qual-list { list-style: none; }
@@ -381,10 +383,10 @@ document.addEventListener('DOMContentLoaded', function () {
 </section>
 
 <!-- CHEFE VS PAI -->
-<section class="section bg-warm reveal" data-track-section="chefe-pai">
+<section class="section bg-dark reveal" data-track-section="chefe-pai">
   <div class="container">
     <p class="label">O que ninguém te disse</p>
-    <h2>Você trata Deus como chefe.</h2>
+    <h2 style="color:#fff;">Você trata Deus como chefe.</h2>
     <div class="prose">
       <p>Chefe não descansa até bater a meta. Chefe mede seu valor pelo que você entrega.</p>
       <p>Mas Deus nunca te contratou. Te adotou.</p>
@@ -414,6 +416,14 @@ document.addEventListener('DOMContentLoaded', function () {
       <li><span class="mark-no">✕</span><span>Você busca uma fórmula pronta, sem aplicar nada por 21 dias.</span></li>
       <li><span class="mark-no">✕</span><span>Você quer um curso longo, não um protocolo curto e prático.</span></li>
     </ul>
+  </div>
+</section>
+
+<!-- MOMENTO ISOLADO: A PROMESSA, ANTES DA OFERTA -->
+<section class="moment bg-deep reveal" data-track-section="momento-promessa">
+  <div>
+    <p>Isso não é mais um protocolo pra terminar algum dia.</p>
+    <p class="moment-sub">É a sua primeira pausa. Hoje.</p>
   </div>
 </section>
 
