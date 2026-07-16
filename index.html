@@ -196,10 +196,19 @@
     }
     .qual-list li:last-child { border-bottom: none; }
     .qual-arrow { color: #C4973B; font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+    .qual-arrow-negative { color: #9A5040; font-size: 18px; flex-shrink: 0; margin-top: 1px; }
     .warning-text {
       font-size: 14px; color: #5A4030;
       margin-top: 16px; padding: 14px 16px; background: #F7F0E4; border-radius: 4px;
     }
+
+    .curriculum-list { list-style: none; padding: 0; margin: 20px 0; }
+    .curriculum-list li {
+      padding: 16px 0 16px 0; border-bottom: 1px solid #E0D4C0;
+    }
+    .curriculum-list li:last-child { border-bottom: none; }
+    .curriculum-week { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #C4973B; margin-bottom: 6px; font-family: 'Inter', sans-serif; font-weight: 700; }
+    .curriculum-desc { font-size: 16px; color: #3A2810; }
 
     .offer-box {
       background: #1C1208; color: #F0E8D8; border-radius: 8px;
@@ -361,6 +370,14 @@
       <div class="divider"></div>
 
       <p>Se você se identificou com pelo menos 2, A Tábua Esquecida foi construída pra você.</p>
+
+      <p class="label" style="margin-top: 28px;">Não é pra você se</p>
+      <ul class="qual-list">
+        <li><span class="qual-arrow-negative">&#10005;</span><span>Você busca uma fórmula de resultado sem aplicar nada por 21 dias.</span></li>
+        <li><span class="qual-arrow-negative">&#10005;</span><span>Você quer um curso longo com módulos de vídeo, não um protocolo curto e prático.</span></li>
+        <li><span class="qual-arrow-negative">&#10005;</span><span>Você espera que o protocolo resolva sozinho a causa prática da sua sobrecarga (filhos, trabalho, finanças).</span></li>
+      </ul>
+
       <div class="warning-text">Este protocolo não é para quem busca resultado sem aplicação. São 21 dias de prática honesta. Nada mais.</div>
     </div>
   </section>
@@ -374,6 +391,13 @@
         <p class="offer-phase">Pleno</p>
         <p class="offer-name">A Tábua Esquecida</p>
         <p class="offer-desc">Um protocolo de 21 dias. Não um curso, não horas de vídeo. Em menos de 5 minutos por dia você aplica o protocolo e volta pra sua rotina: e-book curto + um áudio guiado de 5 minutos por dia + estrutura de oração.</p>
+
+        <ul class="curriculum-list" style="text-align: left;">
+          <li><p class="curriculum-week">Semana 1 — Reconhecer a culpa</p><p class="curriculum-desc" style="margin-bottom:0; color:#E4D4B0;">Por que você continua se sentindo culpada mesmo sabendo que Deus mandou descansar</p></li>
+          <li><p class="curriculum-week">Semana 2 — Praticar o mandamento</p><p class="curriculum-desc" style="margin-bottom:0; color:#E4D4B0;">Como parar sem pedir desculpa, no meio da rotina real</p></li>
+          <li><p class="curriculum-week">Semana 3 — Consolidar a nova identidade</p><p class="curriculum-desc" style="margin-bottom:0; color:#E4D4B0;">Voltar a servir por escolha, não por obrigação</p></li>
+        </ul>
+
         <p class="offer-price">R$37,90</p>
         <p class="offer-detail">De R$147. Uma única vez. Acesso imediato.</p>
         <!-- TODO: substituir href pelo link do checkout Payt quando o produto for cadastrado -->
