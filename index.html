@@ -171,17 +171,13 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ===== HERO ===== */
   .hero {
     min-height: 100dvh;
-    display: flex; flex-direction: column;
+    display: flex; flex-direction: column; justify-content: center;
     background: var(--dark); color: var(--cream);
-    padding: 0;
+    padding: 64px 24px;
   }
-  .hero-photo { width: 100%; flex: 1 1 auto; min-height: 54vh; max-height: 66vh; overflow: hidden; position: relative; }
-  .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 28%; display: block; }
-  @media (min-width: 900px) {
-    .hero-photo { min-height: 78vh; max-height: 88vh; }
-    .hero-photo img { object-position: center 38%; }
-  }
-  .hero-content { padding: 40px 24px 64px; text-align: center; }
+  .hero-photo { width: 100%; max-width: 720px; margin: 0 auto 40px; aspect-ratio: 1537 / 1023; border-radius: 10px; overflow: hidden; position: relative; }
+  .hero-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .hero-content { text-align: center; }
   .hero-question {
     font-family: 'Lora', serif; font-size: clamp(26px, 5.5vw, 38px);
     line-height: 1.28; color: #fff; max-width: 18ch; margin: 0 auto 18px;
