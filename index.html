@@ -36,6 +36,7 @@ src="https://www.facebook.com/tr?id=PIXEL_ID_AQUI&ev=PageView&noscript=1"
 </script>
 
 <script>
+document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('click', function (event) {
     var el = event.target.closest('[data-track-cta]');
     if (!el) return;
@@ -117,6 +118,7 @@ src="https://www.facebook.com/tr?id=PIXEL_ID_AQUI&ev=PageView&noscript=1"
     }, { threshold: 0.2, rootMargin: '0px 0px -60px 0px' });
     document.querySelectorAll('.reveal').forEach(function (el) { reveal.observe(el); });
   })();
+});
 </script>
 
 <!-- Microsoft Clarity -->
